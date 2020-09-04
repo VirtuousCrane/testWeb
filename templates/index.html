@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+	<h1>Hello!</h1>
+	{% for x in range(0, 10) %}
+		{% if x % 2 == 1 %}
+			<p>{{x}}</p>
+		{% endif %}
+		
+	{% endfor %}
+</body>
+</html>
