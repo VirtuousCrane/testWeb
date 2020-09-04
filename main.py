@@ -8,6 +8,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")     # Returns inline html
 
+@app.route("/test")
+def test():
+	return render_template("new.html")
 '''
 @app.route("/<name>") # Passes the string in the url to the function parameter
 def user(name):
@@ -27,4 +30,4 @@ def admin():
 '''
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
